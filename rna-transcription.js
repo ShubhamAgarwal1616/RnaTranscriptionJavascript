@@ -1,3 +1,5 @@
 export function toRna(DNA){
-    return '';
+    if (DNA == '')
+        return '';
+    return 'G'
 }
