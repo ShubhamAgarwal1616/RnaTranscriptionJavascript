@@ -5,5 +5,7 @@ export function toRna(DNA){
         return 'G'
     if (DNA == 'G')
         return 'C'
-    return 'U'
+    if (DNA == 'A')
+        return 'U'
+    return 'A'
 }
