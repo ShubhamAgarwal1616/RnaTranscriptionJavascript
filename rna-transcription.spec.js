@@ -20,4 +20,9 @@ describe('Transcriptor', () => {
   test('transcribes thymine to adenine', () => {
     expect(toRna('T')).toEqual('A');
   });
+
+  test('transcribes dna nucleotides to their rna complements', () => {
+    expect(toRna('ACGTGGTCTTAA'))
+        .toEqual('UGCACCAGAAUU');
+  });
 });
